@@ -44,9 +44,13 @@
   <div class="gift-box" onclick="revealGift()"></div>
   <img id="surpriseImage" class="hidden-image" src="https://s.alicdn.com/@sc04/kf/H7ca9267241be4861b7521912f383524e8.jpg_720x720q50.jpg" alt="Surprise !" />
   
+  <!-- L’audio -->
+  <audio id="birthdaySound" src="https://www.myinstants.com/fr/instant/jixaw-metal-pipe-falling-sound-28270/?utm_source=copy&utm_medium=share" preload="auto"></audio>
+
   <script>
     function revealGift() {
       document.getElementById('surpriseImage').style.display = 'block';
+      document.getElementById('birthdaySound').play();
     }
   </script>
 </body>
