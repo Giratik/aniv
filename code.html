@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joyeux anniversaire !</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #ffeef2;
+      padding: 50px;
+    }
+
+    .gift-box {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      background: url('https://cdn-icons-png.flaticon.com/512/2738/2738893.png') no-repeat center/contain;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gift-box:hover {
+      transform: scale(1.05);
+    }
+
+    .hidden-image {
+      display: none;
+      margin-top: 30px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #d63384;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Clique sur le cadeau 🎁</h1>
+  <div class="gift-box" onclick="revealGift()"></div>
+  <img id="surpriseImage" class="hidden-image" src="https://s.alicdn.com/@sc04/kf/H7ca9267241be4861b7521912f383524e8.jpg_720x720q50.jpg" alt="Surprise !" />
+  
+  <script>
+    function revealGift() {
+      document.getElementById('surpriseImage').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
